@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600&family=Titillium+Web:wght@400;500;600&display=swap');
+
+/* Section Wrapper */
+.skills-section {
+  padding: 4rem 2rem;
+  background-color: #121212;
+  font-family: "Titillium Web", sans-serif;
+  color: #ddd;
+}
+
+/* Section Title */
+.skills-title {
+  font-family: "Oxanium", cursive;
+  font-size: 2.8rem;
+  color: #00ffcc;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+/* Category Wrapper */
+.skill-category {
+  margin-bottom: 3.5rem;
+}
+
+/* Category Heading */
+.category-title {
+  font-family: "Oxanium", cursive;
+  font-size: 1.8rem;
+  color: #00ffcc;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #00ffcc;
+  padding-left: 0.75rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Skill Card */
+.skill-card {
+  background-color: #1a1a1a;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  outline: none;
+}
+
+.skill-card:hover,
+.skill-card:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffcc;
+  background-color: #00ffcc20;
+}
+
+/* Skill Icon */
+.skill-icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px #00ffcc60;
+}
+
+.skill-icon img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+/* Skill Info */
+.skill-info {
+  flex-grow: 1;
+}
+
+/* Skill Name */
+.skill-name {
+  font-family: "Oxanium", cursive;
+  color: #00ffcc;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Skill Description */
+.skill-desc {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  line-height: 1.3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .skill-card {
+    padding: 1.2rem;
+  }
+
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-name {
+    font-size: 1.1rem;
+  }
+}

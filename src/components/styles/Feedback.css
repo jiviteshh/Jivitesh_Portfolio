@@ -1,0 +1,114 @@
+.feedback-section {
+  padding: 4rem 2rem;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback-title {
+  font-size: 2.25rem;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #1e1e1e;
+  color: #fff;
+  box-shadow: inset 0 0 5px rgba(0, 255, 204, 0.2);
+}
+
+.feedback-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.feedback-form button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #00ffcc;
+  color: #121212;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+  background-color: #00ccb3;
+}
+
+.reviews-title {
+  font-size: 1.75rem;
+  margin: 2rem 0 1.5rem;
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc;
+  text-align: center;
+}
+
+.rating-container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.rating-container .star {
+  color: #606060;
+  font-size: 1.75rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.rating-container .selected {
+  color: #ffd700;
+}
+
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.feedback-item {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.rating-display {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.rating-display .selected {
+  color: #ffd700;
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 4rem;
+  text-align: center;
+}

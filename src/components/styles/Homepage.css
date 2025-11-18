@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+
+/* MAIN SECTION */
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121212;
+  padding: 2rem;
+  flex-wrap: wrap;
+  color: #ddd;
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* LEFT SIDE CONTENT */
+.content-left {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 2rem;
+}
+
+/* RIGHT SIDE CONTENT */
+.content-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+}
+
+/* WELCOME TEXT (MATCHED TO EDUCATION HEADING STYLE) */
+.welcome-text {
+  font-family: "Oxanium", cursive;
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #00ffcc;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  
+}
+
+/* MYSELF TEXT */
+.myself-text {
+  font-family: "Oxanium", cursive;
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #00e6b3;
+  margin-bottom: 1rem;
+  text-shadow:
+    0 0 6px #00ffcc80,
+    0 0 12px #00ffcc50;
+}
+
+/* NAME (ULTRA FUTURISTIC — KEPT ORIGINAL FEEL BUT POLISHED) */
+.name-text {
+  font-family: "Orbitron", sans-serif;
+  font-size: 4.2rem;
+  font-weight: 900;
+  color: #00ffcc;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.05em;
+  
+}
+
+.name-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: letterReveal 0.5s forwards ease-out;
+  color: #00ffcc;
+}
+
+/* ANIMATION */
+@keyframes letterReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ROLE TEXT */
+.role-text {
+  font-size: 1.4rem;
+  color: #b3b3b3;
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+/* PROFILE IMAGE */
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #00ffcc;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  box-shadow:
+    0 0 20px #00ffcc,
+    0 0 40px #0099cc,
+    0 0 60px #00ffcc80;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 30px #00ffcc,
+    0 0 60px #0099cc;
+}
+
+/* RESUME BUTTON */
+.resume-link {
+  font-family: "Oxanium", cursive;
+  font-size: 1.2rem;
+  color: #00ffcc;
+  text-decoration: none;
+  border: 2px solid #00ffcc;
+  padding: 0.6rem 1.3rem;
+  border-radius: 30px;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 6px #00ffcc;
+  box-shadow: 
+    0 0 12px #00ffcc70,
+    0 0 25px #0099cc70;
+}
+
+.resume-link:hover {
+  background-color: #00ffcc;
+  color: #121212;
+  box-shadow:
+    0 0 20px #00ffcc,
+    0 0 40px #0099cc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-left {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .name-text {
+    font-size: 3.3rem;
+  }
+
+  .profile-image {
+    width: 190px;
+    height: 190px;
+  }
+
+  .resume-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-text {
+    font-size: 2.1rem;
+  }
+
+  .myself-text {
+    font-size: 1.6rem;
+  }
+
+  .name-text {
+    font-size: 2.7rem;
+  }
+
+  .role-text {
+    font-size: 1.1rem;
+  }
+}

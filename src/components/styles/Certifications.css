@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600&family=Orbitron:wght@400;700&family=Titillium+Web:wght@400;500;600&display=swap');
+
+.certifications-section {
+    padding: 4rem 2rem;
+    background-color: #121212;
+    font-family: "Titillium Web", sans-serif;
+    color: #ddd;
+}
+
+/* Heading — MATCHED with education heading */
+.certifications-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-family: "Orbitron", sans-serif;
+    color: #00ffcc;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+/* Container — unchanged alignment */
+.certifications-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Card — same layout + new glow style */
+.certification-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 6px rgba(0, 255, 204, 0.2);
+}
+
+/* Hover effect same style as education cards */
+.certification-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 255, 204, 0.5);
+}
+
+/* Logo — unchanged layout */
+.cert-logo {
+    width: 80px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.cert-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Text — fonts updated to match education */
+.cert-info {
+    flex-grow: 1;
+}
+
+.cert-title {
+    font-family: "Oxanium", sans-serif;
+    color: #00ffcc;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.cert-company {
+    font-family: "Titillium Web", sans-serif;
+    color: #a0a0a0;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+/* View Button — font & glow updated */
+.view-button {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    font-family: "Oxanium", sans-serif;
+    border: 1px solid #00ffcc;
+    border-radius: 6px;
+    color: #00ffcc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.view-button:hover {
+    background-color: #00ffcc;
+    color: #121212;
+    box-shadow: 0 0 12px #00ffcc;
+}
+
+.cert-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive — unchanged layout */
+@media (max-width: 768px) {
+    .certification-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.2rem;
+    }
+
+    .cert-logo {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certifications-title {
+        font-size: 2rem;
+    }
+
+    .cert-title {
+        font-size: 1.1rem;
+    }
+
+    .cert-company {
+        font-size: 0.85rem;
+    }
+
+    .view-button {
+        font-size: 0.8rem;
+    }
+}

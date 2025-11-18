@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+
+/* Section */
+.about-section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+}
+
+/* Layout */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/* Left Side */
+.about-left {
+  max-width: 60%;
+  text-align: left;
+}
+
+/* Title – matches education heading */
+.about-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #00ffcc;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #00ffcc40;
+}
+
+/* Text */
+.about-text {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.3rem;
+  color: #dcdcdc;
+  line-height: 1.75;
+  max-width: 750px;
+}
+
+/* Right Side Buttons */
+.about-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.linkedin-link {
+  text-decoration: none;
+}
+
+/* Buttons (same style for both) */
+.linkedin-button,
+.about-right button.download-resume {
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: 'Titillium Web', sans-serif;
+
+  background-color: #121212;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+
+  transition: 0.3s ease;
+}
+
+.linkedin-button:hover,
+.about-right button.download-resume:hover {
+  background-color: #00ffcc;
+  color: #000;
+  box-shadow: 0 0 12px #00ffcc;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-left {
+    max-width: 100%;
+  }
+
+  .about-right {
+    margin-top: 2rem;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 2.3rem;
+  }
+
+  .about-text {
+    font-size: 1.15rem;
+  }
+
+  .linkedin-button,
+  .about-right button.download-resume {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.3rem;
+  }
+}
